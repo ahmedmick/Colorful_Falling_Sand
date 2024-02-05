@@ -162,6 +162,7 @@ def draw_grid():
     """
     Draws a grid on the screen using the given grid data, and also draws a button on the screen.
     """
+    global button
     for row in range(grid_rows):
         for col in range(grid_columns // 2):
             # Draw from the front
