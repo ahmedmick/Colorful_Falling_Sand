@@ -224,8 +224,9 @@ if __name__ == '__main__':
                 counter += 1
                 if counter >= changing_color_counter:
                     colored_cell_index = (colored_cell_index + 1) % 7
-                    counter = 0
-                change_color(row, col, colored_cell[colored_cell_index])  # Change color to red when clicked
+                    counter = 0  
+                # Change color to the next color when clicked
+                change_color(row, col, colored_cell[colored_cell_index])  
 
         # Draw the grid
         draw_grid()
