@@ -156,7 +156,7 @@ def clear_screen():
     grid = [[(0, 0, 0) for _ in range(grid_columns)] for _ in range(grid_rows)]
 
 # Create a button
-button = Button(580, 30, 100, 40, "Clear", clear_screen)
+button = Button(60, 30, 100, 40, "Clear", clear_screen)
 
 def draw_grid():
     """
@@ -174,7 +174,7 @@ def draw_grid():
             rect_back = pg.Rect(col_back * grid_size, row * grid_size, grid_size, grid_size)
             pg.draw.rect(screen, grid[row][col_back], rect_back)
             
-    button = Button(260, 30, 100, 40, "Clear", clear_screen)
+    button = Button(30, 30, 80, 40, "Clear", clear_screen)
     # Draw the button
     button.draw(screen)
 
